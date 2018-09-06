@@ -305,7 +305,6 @@
 		5C10E0D11EEF07F800203C93 /* ExtensionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0C91EEF07F400203C93 /* ExtensionUtils.swift */; };
 		5C14DAE31FF75EB800AF7248 /* SyncSelectDeviceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14DAE21FF75EB800AF7248 /* SyncSelectDeviceTypeViewController.swift */; };
 		5C1A9E851F97D6060071495E /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A9E841F97D6060071495E /* PopupView.swift */; };
-		5C2CD4481F72FA6C004AAB5D /* TopSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2CD4471F72FA6C004AAB5D /* TopSite.swift */; };
 		5C32C7B6034B41A9C822555E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE1D74E40F9E392FFCE9F2F /* main.swift */; };
 		5C404E1B2531DC2E178F80F8 /* ReaderPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C87651157C51F01D4D96F /* ReaderPanel.swift */; };
 		5C44C0CF1E3847A100B1FD81 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C44C0C21E38479200B1FD81 /* CoreData.framework */; };
@@ -1116,6 +1115,7 @@
 		221C89002AFF8CAA7A46AED0 /* write_batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch.h; path = ./brave/ThirdParty/leveldb/include/leveldb/write_batch.h; sourceTree = "<group>"; };
 		23742BDDA52668C11FC7C59F /* DatabaseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseError.swift; path = ./Storage/DatabaseError.swift; sourceTree = "<group>"; };
 		24E7EB795FD310C03CA104FF /* scrape_plugins.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = scrape_plugins.py; path = ./Client/Assets/Search/scrape_plugins.py; sourceTree = "<group>"; };
+		2715F3D021418C11008FEEB8 /* Model8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model8.xcdatamodel; sourceTree = "<group>"; };
 		281FBE9AF8B7F6EFCAF1C39F /* Bookmarks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bookmarks.swift; path = ./Storage/Bookmarks/Bookmarks.swift; sourceTree = "<group>"; };
 		2849F28840241B31DFD49F20 /* FiraSans-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "FiraSans-SemiBold.ttf"; path = "./Client/Assets/Fonts/FiraSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		28642F23E2CE9D7D43B28CFA /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "./ThirdParty/Apple/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -1308,7 +1308,6 @@
 		5C10E0C91EEF07F400203C93 /* ExtensionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtensionUtils.swift; path = Storage/ExtensionUtils.swift; sourceTree = "<group>"; };
 		5C14DAE21FF75EB800AF7248 /* SyncSelectDeviceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SyncSelectDeviceTypeViewController.swift; path = brave/src/frontend/sync/SyncSelectDeviceTypeViewController.swift; sourceTree = "<group>"; };
 		5C1A9E841F97D6060071495E /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = brave/src/frontend/popups/PopupView.swift; sourceTree = "<group>"; };
-		5C2CD4471F72FA6C004AAB5D /* TopSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopSite.swift; path = brave/src/data/TopSite.swift; sourceTree = "<group>"; };
 		5C2D8B271F72D4F100B1C311 /* Model4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model4.xcdatamodel; sourceTree = "<group>"; };
 		5C39A9721F0FECF98A48015E /* BraveBrowserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BraveBrowserViewController.swift; path = ./brave/src/frontend/BraveBrowserViewController.swift; sourceTree = "<group>"; };
 		5C44C0C21E38479200B1FD81 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2556,7 +2555,6 @@
 				5D448B471EA1572A00F1BA98 /* WebsitePresentable.swift */,
 				5D2029A12009726C004F6AC2 /* Syncable.swift */,
 				5C0293841E70D9AE00CA99D0 /* MigrateData.swift */,
-				5C2CD4471F72FA6C004AAB5D /* TopSite.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -4810,7 +4808,6 @@
 				1FA81E870F3EAE5C8FB9269C /* BrowserViewController+ContextMenuHelperDelegate.swift in Sources */,
 				5C67126F8B355442E99D9EDB /* BrowserViewController+FindInPage.swift in Sources */,
 				49603E1E5183CDC3BD1C2D09 /* BrowserViewController+KeyCommands.swift in Sources */,
-				5C2CD4481F72FA6C004AAB5D /* TopSite.swift in Sources */,
 				5D27859A1E70D7EF0066EC15 /* JSInjector.swift in Sources */,
 				C1F07A6A18FC4630EA937E6B /* BrowserViewController+ReaderModeDelegate.swift in Sources */,
 				24F13EC5A582B77E0F00EB61 /* BrowserViewController+TabManagerDelegate.swift in Sources */,
@@ -5950,6 +5947,7 @@
 		5D3892531E98108F00F959E6 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				2715F3D021418C11008FEEB8 /* Model8.xcdatamodel */,
 				5C94D93020A0E8D300414AC1 /* Model7.xcdatamodel */,
 				0A3316501FFD4C6B00BFC542 /* Model6.xcdatamodel */,
 				5C062FD91F76583900D51BC7 /* Model5.xcdatamodel */,
@@ -5958,7 +5956,7 @@
 				5D3892561E9810B400F959E6 /* Model2.xcdatamodel */,
 				5D3892541E98108F00F959E6 /* Model.xcdatamodel */,
 			);
-			currentVersion = 5C94D93020A0E8D300414AC1 /* Model7.xcdatamodel */;
+			currentVersion = 2715F3D021418C11008FEEB8 /* Model8.xcdatamodel */;
 			name = Model.xcdatamodeld;
 			path = brave/src/data/Model.xcdatamodeld;
 			sourceTree = "<group>";

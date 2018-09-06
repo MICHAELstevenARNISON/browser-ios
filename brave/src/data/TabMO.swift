@@ -19,8 +19,7 @@ class TabMO: NSManagedObject {
     @NSManaged var urlHistoryCurrentIndex: Int16
     @NSManaged var screenshot: Data?
     @NSManaged var isSelected: Bool
-    @NSManaged var isClosed: Bool
-    @NSManaged var isPrivate: Bool
+    @NSManaged var screenshotUUID: UUID?
     
     var imageUrl: URL? {
         if let objectId = self.syncUUID, let url = URL(string: "https://imagecache.mo/\(objectId).png") {
@@ -52,7 +51,6 @@ class TabMO: NSManagedObject {
         // TODO: replace with logic to create sync uuid then buble up new uuid to browser.
         tab.syncUUID = UUID().uuidString
         tab.title = Strings.New_Tab
-        tab.isPrivate = PrivateBrowsing.singleton.isOn
         DataController.saveContext(context: context)
         return tab
     }
